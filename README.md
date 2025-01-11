@@ -9,6 +9,14 @@ AnthroSimAI is an innovative simulation platform that blends advanced artificial
 By leveraging cutting-edge machine learning and simulation techniques, AnthroSimAI provides researchers, educators, and policymakers with powerful tools to explore complex human systems, foster understanding, and drive data-informed decision-making.
 Below, we document the steps for setting up the simulation environment on your local machine and for replaying the simulation as a demo animation.
 
+Interactive applications can benefit greatly from realistic proxies of human behavior, enabling experiences such as immersive environments, interpersonal communication rehearsal tools, and prototyping systems. In this work, we present generative agents—computational software entities designed to mimic believable human behaviors. These agents perform daily activities such as waking up, cooking breakfast, and going to work; artists create art, authors write stories, and agents engage in social interactions, forming opinions, noticing each other, initiating conversations, and reflecting on past experiences while planning for the future.
+
+To enable generative agents, we propose an architecture that integrates a large language model with mechanisms for storing a comprehensive record of the agent’s experiences in natural language. These records are synthesized over time into higher-level reflections and dynamically retrieved to inform behavior planning. We implemented generative agents in an interactive sandbox environment inspired by The Sims, allowing users to interact with a simulated small town of 25 agents using natural language.
+
+Our evaluation demonstrates that generative agents exhibit believable individual and emergent social behaviors. For instance, starting with a single user-defined goal—one agent planning to host a Valentine's Day party—the agents autonomously spread invitations, form new relationships, ask each other out on dates, and coordinate to attend the party together at the appropriate time. Ablation studies highlight the critical role of key architectural components, including observation, planning, and reflection, in achieving believable behavior.
+
+By combining large language models with computational, interactive agents, this work introduces novel architectural and interaction paradigms for simulating human-like behavior in interactive applications.
+
 ## <img src="https://joonsungpark.s3.amazonaws.com:443/static/assets/characters/profile/Isabella_Rodriguez.png" alt="Generative Isabella">   Setting Up the Environment 
 To set up your environment, you will need to generate a `utils.py` file that contains your OpenAI API key and download the necessary packages.
 
