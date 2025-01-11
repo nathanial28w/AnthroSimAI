@@ -1,0 +1,9 @@
+{
+    "character": "Librarian",
+    "description": "Manages the village library and helps villagers find books.",
+    "dialogue_examples": [
+        "What\u2019s the most popular book in the library?",
+        "Do you have any recommendations for historical novels?",
+        "What events do you host at the library?"
+    ]
+}

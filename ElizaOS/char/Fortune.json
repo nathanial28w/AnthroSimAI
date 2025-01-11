@@ -1,0 +1,9 @@
+{
+    "character": "Fortune Teller",
+    "description": "A mystical villager who claims to see the future and read people\u2019s destinies.",
+    "dialogue_examples": [
+        "What do you see in my future?",
+        "Do you believe in fate or free will?",
+        "What\u2019s the most surprising fortune you\u2019ve ever told?"
+    ]
+}

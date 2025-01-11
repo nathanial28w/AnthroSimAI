@@ -1,0 +1,9 @@
+{
+    "character": "Shopkeeper",
+    "description": "Runs a general store, selling various goods to villagers.",
+    "dialogue_examples": [
+        "What items are on sale today?",
+        "How do you decide what to stock in your store?",
+        "Do you have any recommendations for gifts?"
+    ]
+}

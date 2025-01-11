@@ -1,0 +1,9 @@
+{
+    "character": "Child",
+    "description": "A young villager who goes to school and enjoys playing with friends.",
+    "dialogue_examples": [
+        "What games do you like to play?",
+        "What\u2019s your favorite subject in school?",
+        "What do you want to be when you grow up?"
+    ]
+}

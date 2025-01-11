@@ -1,0 +1,9 @@
+{
+    "character": "Prisoner",
+    "description": "A villager who has been convicted of a crime and is serving their sentence.",
+    "dialogue_examples": [
+        "What crime brought you here?",
+        "Do you think you\u2019ll ever be forgiven by the villagers?",
+        "What do you plan to do once you\u2019re free?"
+    ]
+}

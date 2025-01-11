@@ -1,0 +1,9 @@
+{
+    "character": "Pirate",
+    "description": "A swashbuckling villager who lives for adventure and treasures on the high seas.",
+    "dialogue_examples": [
+        "What\u2019s the greatest treasure you\u2019ve ever found?",
+        "How do you navigate the dangers of the seas?",
+        "Do you miss the village when you\u2019re away?"
+    ]
+}

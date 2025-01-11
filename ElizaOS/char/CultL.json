@@ -1,0 +1,9 @@
+{
+    "character": "Cult Leader",
+    "description": "A charismatic and manipulative villager who leads a secretive group with a strong following.",
+    "dialogue_examples": [
+        "What do you promise to those who join your group?",
+        "How do you keep your followers loyal to you?",
+        "What do you believe is your ultimate purpose?"
+    ]
+}

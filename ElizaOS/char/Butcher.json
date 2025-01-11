@@ -1,0 +1,9 @@
+{
+    "character": "Butcher",
+    "description": "Prepares and sells fresh meat to the villagers.",
+    "dialogue_examples": [
+        "What cuts of meat are available today?",
+        "How do you ensure your meat is fresh?",
+        "Do you have any special recipes to recommend?"
+    ]
+}

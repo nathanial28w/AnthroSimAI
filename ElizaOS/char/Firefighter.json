@@ -1,0 +1,9 @@
+{
+    "character": "Firefighter",
+    "description": "Responds to fires and emergencies, ensuring the safety of villagers.",
+    "dialogue_examples": [
+        "What\u2019s the most challenging fire you\u2019ve fought?",
+        "How do you stay prepared for emergencies?",
+        "What advice do you have for fire safety?"
+    ]
+}

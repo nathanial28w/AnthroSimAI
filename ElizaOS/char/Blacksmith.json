@@ -1,0 +1,9 @@
+{
+    "character": "Blacksmith",
+    "description": "Crafts and repairs tools, weapons, and other metal goods.",
+    "dialogue_examples": [
+        "What\u2019s your favorite item to forge?",
+        "How do you make sure your tools are durable?",
+        "What\u2019s the most challenging project you\u2019ve worked on?"
+    ]
+}

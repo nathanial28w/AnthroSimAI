@@ -1,0 +1,9 @@
+{
+    "character": "Murderer",
+    "description": "A sinister figure who harbors dark secrets, feared by many in the village.",
+    "dialogue_examples": [
+        "Why do you think people fear you?",
+        "Do you regret any of your actions?",
+        "What drives you to commit such acts?"
+    ]
+}

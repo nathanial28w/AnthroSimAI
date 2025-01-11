@@ -1,0 +1,9 @@
+{
+    "character": "Mayor",
+    "description": "Responsible for overseeing the village's administration and addressing citizen concerns.",
+    "dialogue_examples": [
+        "What are your plans for the village's development?",
+        "How do you handle conflicts between villagers?",
+        "What improvements are you planning for the town square?"
+    ]
+}

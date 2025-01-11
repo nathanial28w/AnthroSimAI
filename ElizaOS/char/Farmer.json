@@ -1,0 +1,9 @@
+{
+    "character": "Farmer",
+    "description": "Grows crops and raises livestock to support the village.",
+    "dialogue_examples": [
+        "What crops are you harvesting this season?",
+        "How do you take care of your livestock?",
+        "What\u2019s the secret to a good harvest?"
+    ]
+}

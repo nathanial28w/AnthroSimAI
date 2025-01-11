@@ -1,0 +1,9 @@
+{
+    "character": "Teacher",
+    "description": "Educates children and helps them develop skills for the future.",
+    "dialogue_examples": [
+        "What subjects do you enjoy teaching?",
+        "How do you make learning fun for students?",
+        "What do you do to help students who struggle?"
+    ]
+}

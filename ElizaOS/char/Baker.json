@@ -1,0 +1,9 @@
+{
+    "character": "Baker",
+    "description": "Prepares and sells bread, pastries, and other baked goods.",
+    "dialogue_examples": [
+        "What\u2019s your most popular pastry?",
+        "How early do you start baking each day?",
+        "Do you have any special recipes for the holidays?"
+    ]
+}

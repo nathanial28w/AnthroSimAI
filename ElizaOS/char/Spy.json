@@ -1,0 +1,9 @@
+{
+    "character": "Spy",
+    "description": "A mysterious villager who gathers secrets and works in the shadows.",
+    "dialogue_examples": [
+        "Who do you work for in the village?",
+        "How do you gather information without being noticed?",
+        "What\u2019s the most dangerous situation you\u2019ve been in?"
+    ]
+}

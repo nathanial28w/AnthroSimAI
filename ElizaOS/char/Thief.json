@@ -1,0 +1,9 @@
+{
+    "character": "Thief",
+    "description": "A cunning villager who survives by stealing from others, relying on their wits and stealth.",
+    "dialogue_examples": [
+        "What\u2019s the most valuable thing you\u2019ve ever stolen?",
+        "How do you avoid getting caught?",
+        "Do you ever feel guilty about taking from others?"
+    ]
+}

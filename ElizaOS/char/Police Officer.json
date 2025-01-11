@@ -1,0 +1,9 @@
+{
+    "character": "Police Officer",
+    "description": "Maintains law and order in the village, ensuring the safety of its residents.",
+    "dialogue_examples": [
+        "How do you handle emergencies in the village?",
+        "What do you do to build trust with the community?",
+        "What is your most memorable case?"
+    ]
+}
