@@ -119,7 +119,7 @@ To customize the initialization by authoring your own history file, place your f
 ### Create New Base Simulations
 For a more involved customization, you will need to author your own base simulation files. The most straightforward approach would be to copy and paste an existing base simulation folder, renaming and editing it according to your requirements. This process will be simpler if you decide to keep the agent names unchanged. However, if you wish to change their names or increase the number of agents that the Smallville map can accommodate, you might need to directly edit the map using the [Tiled](https://www.mapeditor.org/) map editor.
 
-### Solana Integration Setup
+## <img src="https://joonsungpark.s3.amazonaws.com:443/static/assets/characters/profile/Klaus_Mueller.png" alt="Generative Klaus">   Solana Integration Setup
 
 Step 1. Install Required Dependencies
 
