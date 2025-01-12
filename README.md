@@ -119,6 +119,112 @@ To customize the initialization by authoring your own history file, place your f
 ### Create New Base Simulations
 For a more involved customization, you will need to author your own base simulation files. The most straightforward approach would be to copy and paste an existing base simulation folder, renaming and editing it according to your requirements. This process will be simpler if you decide to keep the agent names unchanged. However, if you wish to change their names or increase the number of agents that the Smallville map can accommodate, you might need to directly edit the map using the [Tiled](https://www.mapeditor.org/) map editor.
 
+### Solana Integration Setup
+
+Step 1. Install Required Dependencies
+
+Ensure you have the following Python packages installed:
+
+pip install solana spl-token async-solana
+
+Step 2. Connect to Solana
+
+Create a Python file named connect_to_solana.py and use the following code to establish a connection to the Solana cluster:
+
+from solana.rpc.async_api import AsyncClient
+
+async def connect_to_solana():
+    client = AsyncClient("https://api.mainnet-beta.solana.com")  # Replace with your desired network
+    return client
+Step 3. Manage Wallet Keys
+
+Create another file named wallet_management.py for securely managing your wallet:
+
+from solana.keypair import Keypair
+
+def load_keypair():
+    # Load your private key securely (e.g., from environment variable or file)
+    private_key = [1, 2, 3, ...]  # Replace with your actual private key
+    keypair = Keypair.from_secret_key(bytes(private_key))
+    return keypair
+    
+Step 4. Token Operations
+
+For token creation, transfer, and balance fetching, create a file token_operations.py with the following code:
+
+from spl.token.async_client import AsyncToken
+from solana.publickey import PublicKey
+
+async def create_token(client, payer_keypair):
+    mint_authority = payer_keypair.public_key
+    decimals = 6  # Adjust as needed
+
+    token = await AsyncToken.create_mint(
+        client,
+        payer_keypair,
+        mint_authority,
+        freeze_authority=None,
+        decimals=decimals,
+    )
+    print(f"Token Mint Address: {token.pubkey}")
+    return token
+
+async def transfer_tokens(client, token, source, destination, amount, payer):
+    tx = await token.transfer(
+        source=source,
+        dest=destination,
+        owner=payer,
+        amount=amount,
+    )
+    print(f"Transaction Signature: {tx}")
+
+async def get_token_balance(client, token, owner):
+    balance = await token.get_balance(owner)
+    print(f"Token Balance: {balance['result']['value']} tokens")
+
+Step 5. AI Agent Integration
+
+Integrate Solana functionality into your AI agents. Create a file ai_agent.py with the following:
+
+async def ai_agent_decision(client, token, wallet, target_wallet, amount):
+    balance = await token.get_balance(wallet.public_key)
+    if balance['result']['value'] > amount:
+        print("Balance sufficient. Proceeding with transfer.")
+        await transfer_tokens(client, token, wallet.public_key, target_wallet, amount, wallet)
+    else:
+        print("Insufficient balance. Skipping transfer.")
+
+Step 6. Main Script
+
+Create a main.py to tie it all together:
+
+import asyncio
+from connect_to_solana import connect_to_solana
+from wallet_management import load_keypair
+from token_operations import AsyncToken, PublicKey, transfer_tokens
+from ai_agent import ai_agent_decision
+
+async def main():
+    client = await connect_to_solana()
+    wallet = load_keypair()
+
+    token_mint_address = PublicKey("YourTokenMintAddress")
+    token = AsyncToken(client, token_mint_address, wallet.public_key, wallet)
+
+    target_wallet = PublicKey("TargetWalletAddress")
+    await ai_agent_decision(client, token, wallet, target_wallet, 1000)  # Example call
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+Additional Notes
+
+Replace placeholders like YourTokenMintAddress and TargetWalletAddress with actual values.
+
+Use a secure method to manage and load private keys.
+
+Ensure sufficient SOL balance for transaction fees.
+
 ## <img src="https://joonsungpark.s3.amazonaws.com:443/static/assets/characters/profile/Eddy_Lin.png" alt="Generative Eddy">   Original Authors and Citation 
 
 **A big thank you to the original Authors:** Joon Sung Park, Joseph C. O'Brien, Carrie J. Cai, Meredith Ringel Morris, Percy Liang, Michael S. Bernstein
