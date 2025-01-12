@@ -119,6 +119,23 @@ To customize the initialization by authoring your own history file, place your f
 ### Create New Base Simulations
 For a more involved customization, you will need to author your own base simulation files. The most straightforward approach would be to copy and paste an existing base simulation folder, renaming and editing it according to your requirements. This process will be simpler if you decide to keep the agent names unchanged. However, if you wish to change their names or increase the number of agents that the Smallville map can accommodate, you might need to directly edit the map using the [Tiled](https://www.mapeditor.org/) map editor.
 
+## <img src="https://joonsungpark.s3.amazonaws.com:443/static/assets/characters/profile/Eddy_Lin.png" alt="Generative Eddy">   Original Authors and Citation 
+
+**A big thank you to the original Authors:** Joon Sung Park, Joseph C. O'Brien, Carrie J. Cai, Meredith Ringel Morris, Percy Liang, Michael S. Bernstein
+
+```
+@inproceedings{Park2024GenerativeAgents,  
+author = {Park, Joon Sung and O'Brien, Joseph C. and Cai, Carrie J. and Morris, Meredith Ringel and Liang, Percy and Bernstein, Michael S.},  
+title = {Generative Agents: Interactive Simulacra of Human Behavior},  
+year = {2024},  
+publisher = {Association for Computing Machinery},  
+address = {New York, NY, USA},  
+booktitle = {In the 36th Annual ACM Symposium on User Interface Software and Technology (UIST '24)},  
+keywords = {Human-AI interaction, agents, generative AI, large language models},  
+location = {San Francisco, CA, USA},  
+series = {UIST '24}
+}
+```
 
 
 
